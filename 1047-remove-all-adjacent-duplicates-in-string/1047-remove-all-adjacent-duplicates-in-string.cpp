@@ -1,12 +1,12 @@
 class Solution {
 public:
     string removeDuplicates(string s) {
-        string ans=" ";
+        string ans="";
         
         for(int i=0;i<=s.length()-1;i++)
         {
-            int x=ans.length()-1;
-            if(ans[x]==s[i])
+            int x=ans.length();
+            if((x>0) && ans[x-1]==s[i])
             {
                 ans.pop_back();
             }
@@ -17,7 +17,7 @@ public:
             }
             
         }
-        ans.replace(0,1,"");
+
         return ans;
     }
 };
