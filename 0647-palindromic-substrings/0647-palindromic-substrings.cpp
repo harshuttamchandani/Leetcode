@@ -37,7 +37,7 @@ public:
                 {
                     //cout<<t<<" ";
                     ans=ans+1;
-                    cout<<ans; 
+                    //cout<<ans; 
                 }
             }
         }
