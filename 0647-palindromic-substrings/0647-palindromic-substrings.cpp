@@ -17,7 +17,6 @@ public:
                 j--;
                
             }
-        //cout<<t<<" ";
              return 1;
         }
     
@@ -27,17 +26,18 @@ public:
         
         for(int i=0;i<s.length();i++)
         {
-            string t="";
+            
             for(int j=i;j<s.length();j++)
-            {
-                t+=s[j];
+            {   
+                string t;
+                t=s.substr(i,j-i+1);
                 //cout<<t<<" ";
                 int f=checkpallindrome(t);
                 if(f==1)
                 {
                     //cout<<t<<" ";
                     ans=ans+1;
-                    //cout<<ans; 
+                   // cout<<ans; 
                 }
             }
         }
